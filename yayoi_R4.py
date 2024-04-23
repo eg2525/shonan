@@ -4,6 +4,11 @@ import jaconv
 import streamlit as st
 from io import BytesIO
 
+st.markdown("""
+    弥生の仕訳データは、アップロードする前に「日付」行を「短い日付形式」に変換してからアップロードしてね。
+    """)
+
+
 # CSVファイルのアップロード
 uploaded_file1 = st.file_uploader("弥生の仕訳データのcsvをアップロード", type=['csv'])
 uploaded_file2 = st.file_uploader("財務のMKAMOKUのcsvをアップロード", type=['csv'])
