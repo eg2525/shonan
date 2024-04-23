@@ -1,0 +1,6 @@
+pandas
+streamlit
+numpy
+jaconv
+io
+BytesIO
