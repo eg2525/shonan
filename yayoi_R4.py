@@ -5,7 +5,7 @@ import streamlit as st
 from io import BytesIO
 
 st.markdown("""
-    **弥生の仕訳データ
+    **弥生の仕訳データ  
     アップロードする前に「日付」行を「短い日付形式」に変換してからアップロードしてね。**
     """)
 
