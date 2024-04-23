@@ -226,6 +226,7 @@ if st.checkbox('OK') and uploaded_file1 is not None and uploaded_file2 is not No
         to_download.seek(0)
 
         # ダウンロードボタンを作成
+        st.snow()
         st.download_button(
             label="ダウンロード",
             data=to_download,
