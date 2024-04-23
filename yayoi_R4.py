@@ -201,6 +201,13 @@ if st.checkbox('OK') and uploaded_file1 is not None and uploaded_file2 is not No
 
         output_df = pd.DataFrame(columns = output_columns, index = df_provi.index)
 
+        df_provi['借方科目コード'] = df_provi['借方科目コード'].fillna(0).astype(int)
+        df_provi['貸方科目コード'] = df_provi['貸方科目コード'].fillna(0).astype(int)
+        df_provi['借方補助コード'] = df_provi['借方補助コード'].fillna(0).astype(int)
+        df_provi['貸方補助コード'] = df_provi['貸方補助コード'].fillna(0).astype(int)
+        df_provi['借方金額'] = df_provi['借方金額'].fillna(0).astype(int)
+        df_provi['貸方金額'] = df_provi['貸方金額'].fillna(0).astype(int)
+
         # df_provi から output_df へ特定の列のデータを転記
         output_df['伝票日付'] = df_provi['日付']
         output_df['借方科目'] = df_provi['借方科目コード']
